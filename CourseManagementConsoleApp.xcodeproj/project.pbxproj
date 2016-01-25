@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1205F6291C5085F1004B6BC8 /* Menu+Submenu_students.m in Sources */ = {isa = PBXBuildFile; fileRef = 1205F6281C5085F1004B6BC8 /* Menu+Submenu_students.m */; };
+		1262920A1C55C754007C3D4D /* sqlStudents.m in Sources */ = {isa = PBXBuildFile; fileRef = 126292091C55C754007C3D4D /* sqlStudents.m */; };
+		12B15FF81C52B2D300C16D65 /* SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B15FF71C52B2D300C16D65 /* SQL.m */; };
 		12FACF3E1C4ADF3D00DB89BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FACF3D1C4ADF3D00DB89BD /* main.m */; };
+		12FACF451C4AE4F500DB89BD /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FACF441C4AE4F500DB89BD /* Menu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1205F6271C5085F1004B6BC8 /* Menu+Submenu_students.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Menu+Submenu_students.h"; path = "../Menu+Submenu_students.h"; sourceTree = "<group>"; };
+		1205F6281C5085F1004B6BC8 /* Menu+Submenu_students.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Menu+Submenu_students.m"; path = "../Menu+Submenu_students.m"; sourceTree = "<group>"; };
+		126292081C55BA97007C3D4D /* sqlStudents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlStudents.h; sourceTree = "<group>"; };
+		126292091C55C754007C3D4D /* sqlStudents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sqlStudents.m; sourceTree = "<group>"; };
+		1262920B1C55DC01007C3D4D /* SQLprivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLprivate.h; sourceTree = "<group>"; };
+		12A72D2C1C4DC3A000A36B9F /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		12B15FF61C52B21B00C16D65 /* SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQL.h; sourceTree = "<group>"; };
+		12B15FF71C52B2D300C16D65 /* SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQL.m; sourceTree = "<group>"; };
 		12FACF3A1C4ADF3C00DB89BD /* CourseManagementConsoleApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CourseManagementConsoleApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		12FACF3D1C4ADF3D00DB89BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12FACF441C4AE4F500DB89BD /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +70,16 @@
 		12FACF3C1C4ADF3C00DB89BD /* CourseManagementConsoleApp */ = {
 			isa = PBXGroup;
 			children = (
+				1205F6271C5085F1004B6BC8 /* Menu+Submenu_students.h */,
+				1205F6281C5085F1004B6BC8 /* Menu+Submenu_students.m */,
 				12FACF3D1C4ADF3D00DB89BD /* main.m */,
+				12FACF441C4AE4F500DB89BD /* Menu.m */,
+				12A72D2C1C4DC3A000A36B9F /* Menu.h */,
+				12B15FF61C52B21B00C16D65 /* SQL.h */,
+				12B15FF71C52B2D300C16D65 /* SQL.m */,
+				126292081C55BA97007C3D4D /* sqlStudents.h */,
+				126292091C55C754007C3D4D /* sqlStudents.m */,
+				1262920B1C55DC01007C3D4D /* SQLprivate.h */,
 			);
 			path = CourseManagementConsoleApp;
 			sourceTree = "<group>";
@@ -88,6 +110,9 @@
 		12FACF321C4ADF3C00DB89BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Edward Song";
 				TargetAttributes = {
@@ -118,6 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1262920A1C55C754007C3D4D /* sqlStudents.m in Sources */,
+				12B15FF81C52B2D300C16D65 /* SQL.m in Sources */,
+				1205F6291C5085F1004B6BC8 /* Menu+Submenu_students.m in Sources */,
+				12FACF451C4AE4F500DB89BD /* Menu.m in Sources */,
 				12FACF3E1C4ADF3D00DB89BD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,9 +190,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/local/mysql-connector-c-6.1.6-osx10.8-x86_64/include/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/mysql-connector-c-6.1.6-osx10.8-x86_64/lib/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lmysqlclient",
+					"-lm",
+					"-lz",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -198,8 +234,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/local/mysql-connector-c-6.1.6-osx10.8-x86_64/include/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/mysql-connector-c-6.1.6-osx10.8-x86_64/lib/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lmysqlclient",
+					"-lm",
+					"-lz",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -237,6 +280,7 @@
 				12FACF431C4ADF3D00DB89BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
